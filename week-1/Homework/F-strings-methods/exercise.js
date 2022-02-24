@@ -1,3 +1,5 @@
-// Start by creating a variable `message`
+const nombre = "Jorgelina"
 
-console.log(message);
+const nombrelength = nombre.length;
+
+console.log("My name is" + " " + nombre + " " + "and my name is" + " " + nombrelength + " " + "characters long");
