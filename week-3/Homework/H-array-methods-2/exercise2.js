@@ -8,7 +8,7 @@
 */
 
 function capitalise(str) {
-  return str.split("")[0].toUpperCase()
+  return str.charAt(0).toUpperCase()
 }
 
 /* 
