@@ -10,19 +10,23 @@
 var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 
 function isForEach(num){
-  if(num === 3 || num === 6 || num === 9 || num === 12){
-    return "Fizz"
-  } else if(num === 5 || num === 10){
-    return "Buzz"
-  } else (num === 15){
+  if (((num % 3) == 0) && ((num % 5) ==0)){
     return "FizzBuzz"
   }
-}
+   if ((num % 5 ) == 0) {
+      return "Buzz"
+      
+    }
+    if ((num % 3)==0){
+      return "Fizz"
+    } 
+  return num
+  
+  
+  }
+  
+  arr.map(isForEach).forEach(number => console.log(number))
 
-
-arr.forEach(isForEach)
-
-console.log(arr.forEach(isForEach));
 
 /* EXPECTED OUTPUT */
 
